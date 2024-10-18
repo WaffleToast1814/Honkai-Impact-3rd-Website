@@ -65,7 +65,7 @@ li a{
 
 .Text-1{
     background-color: #686D76;
-    width: 450px;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -231,4 +231,27 @@ li a{
   .Text-1-Heading .title{
     width: 300px;
   }
+
+.links{
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+}
+
+.Home-Text-P{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.synopsis-text-2{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.synopsis-text-3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
 }
