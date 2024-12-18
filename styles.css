@@ -1,7 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+/*Nav Bar*/
+
 
 ul{
     list-style-type: none;
@@ -57,12 +60,13 @@ li a{
     font-size: 20px;
 }
 
-
+/*Container is the background color*/
 .container{
     background-color: #373A40;
     height: 1000vh;
+    width: 100%;
 }
-
+/*Text-1 is the heading and the title*/
 .Text-1{
     background-color: #686D76;
     width: 100%;
@@ -70,7 +74,7 @@ li a{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    height: 5000px;
+    height: 8000px;
     font-size: 20px;
 }
 
@@ -96,6 +100,7 @@ li a{
     
 }
 
+/*Image slideshow*/
 .dot{
     height: 15px;
     width: 15px;
@@ -193,7 +198,7 @@ li a{
   from {opacity: .4}
   to {opacity: 1}
 }
-
+/*Synopsis code*/
 .synopsis-text-1{
   background-color: #DC5F00;
   width: 400px;
@@ -203,17 +208,29 @@ li a{
   margin-right: auto;
   text-align: center;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .synopsis-text-2{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .synopsis-text-3{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+/*code for the character list on the home page*/
 
+.Character-List-Heading{
+  background-color: #DC5F00;
+  width: 400px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 .character-text{
   background-color: #DC5F00;
   width: 400px;
@@ -226,32 +243,228 @@ li a{
   margin-bottom: 10px;
 }
 
+.Character-List-Image{
+  border: 1px solid #f2f2f2;
+  display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    
+}
 
+
+
+.container-2{
+  background-color: #686D76;
+  height: 100vh;
+  width: 100%;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.Unplayable-Character-List{
+  display: none;
+}
+
+
+
+/*Media Querie codes for various device sizes*/
 @media only screen and (max-width: 600px){
-  .Text-1-Heading .title{
-    width: 300px;
+  .container{
+    width: 100%;
+    overflow-x: hidden;
+    height: 550vh;
+    background-color: #373A40;
+
+    
+  }
+  body{
+    overflow-x: hidden;
+    
   }
 
-.links{
+  .Character-List{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+  }
+  
+  .Character-List img{
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+  }
+
+  .Character-List p{
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  
+  .Text-1{
+    background-color: #686D76;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 3000px;
+    font-size: 20px;
+}
+   
+ .Home-Text-1{
+  margin-bottom: 20px;
+ }
+}
+
+@media only screen and (max-width: 768px){
+  .container{
+    width: 100%;
+    overflow-x: hidden;
+    height: 500vh;
+    background-color: #373A40;
+
+    
+  }
+  body{
+    overflow-x: hidden;
+    
+    
+  }
+
+  .Character-List{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+  }
+  
+  .Character-List img{
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+  }
+
+  .Character-List p{
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  
+  .Text-1{
+    background-color: #686D76;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 3200px;
+    font-size: 20px;
+}
+   
+ .Home-Text-1{
+  margin-bottom: 20px;
+ }
+}
+
+@media only screen and (min-width: 1200px){
+.Character-List{
+  display: grid;
+  row-gap: 50px 50px 50px 50px;
+  justify-content: center;
+
+}
+img{
+  width: 100px;
+}
+
+p{
+  font-size: 20px;
+}
+
+}
+
+@media only screen and (max-width: 375px){
+ .container{
   width: 100%;
+ }
 }
 
-.container{
-  width: 100%;
-}
+@media only screen and (min-width: 1240px){
+  .container{
+    width: 100%;
+    height: 400vh;
+    background-color: #373A40;
 
-.Home-Text-P{
-  font-size: 25px;
+    
+  }
+  
+  .Character-List img{
+    height: 90px;
+    width: 90px;
+    margin-top: 10px;
+  }
+
+  .Character-List p{
+    font-size: 25px;
+    margin-top: 2px;
+  }
+  
+  .Text-1{
+    background-color: #686D76;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 4150px;
+    font-size: 20px;
+}
+   
+ .Home-Text-1{
   margin-bottom: 20px;
+ }
+
+ #bar{
+  display: none;
+ }
+ .nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-right: 500px;
+ }
+
+ .Unplayable-Character-List-Image{
+  display: none;
+ }
+ .Battlesuits-Heading{
+  text-align: left;
+    padding: 28px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+ .Kiana-Kaslana-Battlesuit-List{
+  text-align: center;
+
+}
+.Kiana-Kaslana-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+}
+.Battlesuits{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
 }
 
-.synopsis-text-2{
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-.synopsis-text-3{
-  font-size: 25px;
-  margin-bottom: 20px;
-}
 
-}
+
+
