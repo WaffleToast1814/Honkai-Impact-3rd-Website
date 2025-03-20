@@ -52,12 +52,12 @@ a{
     background-color: #3D5A80;
     width: 100%;
     margin-top: 70px;
-    height: 15vh;
 }
 
 li a{
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 
 /*Container is the background color*/
@@ -255,7 +255,7 @@ li a{
 
 .container-2{
   background-color: #686D76;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
 }
 
@@ -271,55 +271,62 @@ li a{
 
 
 /*Media Querie codes for various device sizes*/
-@media only screen and (max-width: 600px){
-  .container{
-    width: 100%;
-    overflow-x: hidden;
-    height: 550vh;
-    background-color: #373A40;
+@media only screen and (min-width: 768px){
 
-    
-  }
-  body{
-    overflow-x: hidden;
-    
-  }
+  ul{
+    list-style-type: none;
+    display: none;
+}
 
-  .Character-List{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-  }
-  
-  .Character-List img{
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.links{
+    background-color: #3D5A80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     height: 70px;
-    width: 70px;
-    margin-top: 10px;
-  }
-
-  .Character-List p{
-    font-size: 15px;
-    margin-top: 2px;
-  }
-  
-  .Text-1{
-    background-color: #686D76;
     width: 100%;
+}
+
+
+.logo img{
+    width: 120px;
+    height: 90px;
+}
+
+#bar{
+    font-size: 30px;
+    color: white;
+}
+
+.toggle{
+    position: absolute;
+    top: 25px;
+    right: 20px
+}
+
+.mobile-menu-active{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
     text-align: center;
-    height: 3000px;
+    top: 0;
+    right: 0;
+    background-color: #3D5A80;
+    width: 100%;
+    margin-top: 70px;
+}
+
+li a{
+    color: white;
     font-size: 20px;
 }
-   
- .Home-Text-1{
-  margin-bottom: 20px;
- }
-}
 
-@media only screen and (max-width: 768px){
-  .container{
+ .container{
     width: 100%;
     overflow-x: hidden;
     height: 500vh;
@@ -364,9 +371,655 @@ li a{
  .Home-Text-1{
   margin-bottom: 20px;
  }
+
+ .container-2{
+  width: 100%;
+  overflow-x: hidden;
+  height: 550vh;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+ }
+
+ .Battlesuits-Heading{
+  text-align: center;
+  margin-bottom: 20px;
+ }
+.Battlesuits{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@media only screen and (min-width: 1200px){
+
+.Kiana-Kaslana-Battlesuit-List{
+  text-align: center;
+}
+
+
+.Kiana-Kaslana-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Raiden-Mei-Battlesuit-List{
+  text-align: center;
+}
+
+.Raiden-Mei-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Bronya-Zaychik-Battlesuit-List{
+  text-align: center;
+}
+
+.Bronya-Zaychik-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Murata-Himeko-Battlesuit-List{
+  text-align: center;
+}
+
+.Murata-Himeko-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Yae-Sakura-Battlesuit-List{
+  text-align: center;
+}
+
+.Yae-Sakura-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Theresa-Apocalypse-Battlesuit-List{
+  text-align: center;
+}
+
+.Theresa-Apocalypse-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Fu-Hua-Battlesuit-List{
+  text-align: center;
+}
+
+.Fu-Hua-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Kallen-Kaslana-Battlesuit-List{
+  text-align: center;
+}
+
+.Kallen-Kaslana-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 700px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Rita-Rossweisse-Battlesuit-List{
+  text-align: center;
+}
+
+.Rita-Rossweisse-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Seele-Vollerei-Battlesuit-List{
+  text-align: center;
+}
+
+.Seele-Vollerei-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Rozaliya-Olenyeva-Battlesuit-List{
+  text-align: center;
+}
+
+.Rozaliya-Olenyeva-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Liliya-Olenyeva-Battlesuit-List{
+  text-align: center;
+}
+
+.Liliya-Olenyeva-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Durandal-Battlesuit-List{
+  text-align: center;
+}
+
+.Durandal-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Asuka-Battlesuit-List{
+  text-align: center;
+}
+
+.Asuka-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Fischl-Battlesuit-List{
+  text-align: center;
+}
+
+.Fischl-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Elysia-Battlesuit-List{
+  text-align: center;
+}
+
+.Elysia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Raven-Battlesuit-List{
+  text-align: center;
+}
+
+.Raven-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Mobius-Battlesuit-List{
+  text-align: center;
+}
+
+.Mobius-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Carole-Pepper-Battlesuit-List{
+  text-align: center;
+}
+
+.Carole-Pepper-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Pardofelis-Battlesuit-List{
+  text-align: center;
+}
+
+.Pardofelis-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Aponia-Battlesuit-List{
+  text-align: center;
+}
+
+.Aponia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Eden-Battlesuit-List{
+  text-align: center;
+}
+
+.Eden-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Griseo-Battlesuit-List{
+  text-align: center;
+}
+
+.Griseo-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Vill-V-Battlesuit-List{
+  text-align: center;
+}
+
+.Vill-V-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Sushang-Battlesuit-List{
+  text-align: center;
+}
+
+.Sushang-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Ai-Hyperion-Battlesuit-List{
+  text-align: center;
+}
+
+.Ai-Hyperion-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Susannah-Manatt-Battlesuit-List{
+  text-align: center;
+}
+
+.Susannah-Manatt-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Prometheus-Battlesuit-List{
+  text-align: center;
+}
+
+.Prometheus-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Misteln-Schariac-Battlesuit-List{
+  text-align: center;
+}
+
+.Misteln-Schariac-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Shigure-Kira-Battlesuit-List{
+  text-align: center;
+}
+
+.Shigure-Kira-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Sirin-Battlesuit-List{
+  text-align: center;
+}
+
+.Sirin-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Senadina-Battlesuit-List{
+  text-align: center;
+}
+
+.Senadina-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Helia-Battlesuit-List{
+  text-align: center;
+}
+
+.Helia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Coralie-Battlesuit-List{
+  text-align: center;
+}
+
+.Coralie-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Thelema-Battlesuit-List{
+  text-align: center;
+}
+
+.Thelema-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Lantern-Battlesuit-List{
+  text-align: center;
+}
+
+.Lantern-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Songque-Battlesuit-List{
+  text-align: center;
+}
+
+.Songque-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Vita-Battlesuit-List{
+  text-align: center;
+}
+
+.Vita-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.Sparkle-Battlesuit-List{
+  text-align: center;
+}
+
+.Sparkle-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  width: 500px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+}
+
+@media only screen and (min-width: 1024px){
 .Character-List{
   display: grid;
   row-gap: 50px 50px 50px 50px;
@@ -387,6 +1040,607 @@ p{
  .container{
   width: 100%;
  }
+
+ .body{
+  width:100%;
+ }
+
+ .Battlesuits-Heading{
+  text-align: center;
+  padding: 28px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.container-2{
+  width: 100%;
+  height: 100%;
+}
+
+.Kiana-Kaslana-Battlesuit-List{
+  text-align: center;
+}
+
+.Kiana-Kaslana-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Raiden-Mei-Battlesuit-List{
+  text-align: center;
+}
+
+.Raiden-Mei-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Bronya-Zaychik-Battlesuit-List{
+  text-align: center;
+}
+
+.Bronya-Zaychik-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Murata-Himeko-Battlesuit-List{
+  text-align: center;
+}
+
+.Murata-Himeko-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Yae-Sakura-Battlesuit-List{
+  text-align: center;
+}
+
+.Yae-Sakura-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Theresa-Apocalypse-Battlesuit-List{
+  text-align: center;
+}
+
+.Theresa-Apocalypse-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Fu-Hua-Battlesuit-List{
+  text-align: center;
+}
+
+.Fu-Hua-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Kallen-Kaslana-Battlesuit-List{
+  text-align: center;
+}
+
+.Kallen-Kaslana-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Rita-Rossweisse-Battlesuit-List{
+  text-align: center;
+}
+
+.Rita-Rossweisse-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Seele-Vollerei-Battlesuit-List{
+  text-align: center;
+}
+
+.Seele-Vollerei-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Rozaliya-Olenyeva-Battlesuit-List{
+  text-align: center;
+}
+
+.Rozaliya-Olenyeva-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Liliya-Olenyeva-Battlesuit-List{
+  text-align: center;
+}
+
+.Liliya-Olenyeva-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Durandal-Battlesuit-List{
+  text-align: center;
+}
+
+.Durandal-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Asuka-Battlesuit-List{
+  text-align: center;
+}
+
+.Asuka-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Fischl-Battlesuit-List{
+  text-align: center;
+}
+
+.Fischl-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Elysia-Battlesuit-List{
+  text-align: center;
+}
+
+.Elysia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Raven-Battlesuit-List{
+  text-align: center;
+}
+
+.Raven-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Mobius-Battlesuit-List{
+  text-align: center;
+}
+
+.Mobius-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Carole-Pepper-Battlesuit-List{
+  text-align: center;
+}
+
+.Carole-Pepper-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Pardofelis-Battlesuit-List{
+  text-align: center;
+}
+
+.Pardofelis-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Aponia-Battlesuit-List{
+  text-align: center;
+}
+
+.Aponia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Eden-Battlesuit-List{
+  text-align: center;
+}
+
+.Eden-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Griseo-Battlesuit-List{
+  text-align: center;
+}
+
+.Griseo-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Vill-V-Battlesuit-List{
+  text-align: center;
+}
+
+.Vill-V-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Sushang-Battlesuit-List{
+  text-align: center;
+}
+
+.Sushang-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Ai-Hyperion-Battlesuit-List{
+  text-align: center;
+}
+
+.Ai-Hyperion-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Susannah-Manatt-Battlesuit-List{
+  text-align: center;
+}
+
+.Susannah-Manatt-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Prometheus-Battlesuit-List{
+  text-align: center;
+}
+
+.Prometheus-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Misteln-Schariac-Battlesuit-List{
+  text-align: center;
+}
+
+.Misteln-Schariac-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Shigure-Kira-Battlesuit-List{
+  text-align: center;
+}
+
+.Shigure-Kira-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Sirin-Battlesuit-List{
+  text-align: center;
+}
+
+.Sirin-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Senadina-Battlesuit-List{
+  text-align: center;
+}
+
+.Senadina-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Helia-Battlesuit-List{
+  text-align: center;
+}
+
+.Helia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Coralie-Battlesuit-List{
+  text-align: center;
+}
+
+.Coralie-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Thelema-Battlesuit-List{
+  text-align: center;
+}
+
+.Thelema-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Lantern-Battlesuit-List{
+  text-align: center;
+}
+
+.Lantern-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Songque-Battlesuit-List{
+  text-align: center;
+}
+
+.Songque-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Vita-Battlesuit-List{
+  text-align: center;
+}
+
+.Vita-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.Sparkle-Battlesuit-List{
+  text-align: center;
+}
+
+.Sparkle-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f2f2f2;
+  gap: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
 }
 
 @media only screen and (min-width: 1240px){
@@ -432,7 +1686,7 @@ p{
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  margin-right: 500px;
+  margin-right: 450px;
  }
 
  .Unplayable-Character-List-Image{
@@ -444,27 +1698,612 @@ p{
     margin-bottom: 10px;
     font-size: 30px;
 }
- .Kiana-Kaslana-Battlesuit-List{
-  text-align: center;
 
+.container-2{
+  height: 7100px;
 }
+
+
+.Kiana-Kaslana-Battlesuit-List{
+  text-align: center;
+}
+
+
 .Kiana-Kaslana-Battlesuit-List-Image{
   display: grid;
   grid-template-columns: repeat(8,1fr);
   justify-content: flex-start;
   align-items: flex-start;
   border: 1px solid #f2f2f2;
-  width: 500px;
+  width: 1000px;
   gap: 20px;
+  margin-bottom: 20px;
 }
+
+
 .Battlesuits{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
+
+.Raiden-Mei-Battlesuit-List{
+  text-align: center;
 }
 
+.Raiden-Mei-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #f2f2f2;
+  width: 1000px;
+  gap: 20px;
+  margin-bottom: 20px;
+  
+}
 
+.Bronya-Zaychik-Battlesuit-List{
+  text-align: center;
+}
 
+.Bronya-Zaychik-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(11,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 1200px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Murata-Himeko-Battlesuit-List{
+  text-align: center;
+}
+
+.Murata-Himeko-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 1200px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Yae-Sakura-Battlesuit-List{
+  text-align: center;
+}
+
+.Yae-Sakura-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 600px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Theresa-Apocalypse-Battlesuit-List{
+text-align: center;
+}
+
+.Theresa-Apocalypse-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 1200px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Fu-Hua-Battlesuit-List{
+  text-align: center;
+}
+
+.Fu-Hua-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 1200px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Kallen-Kaslana-Battlesuit-List{
+  text-align: center;
+}
+
+.Kallen-Kaslana-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 750px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Rita-Rossweisse-Battlesuit-List{
+  text-align: center;
+}
+
+.Rita-Rossweisse-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 1200px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Seele-Vollerei-Battlesuit-List{
+  text-align: center;
+}
+
+.Seele-Vollerei-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 1200px;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.Rozaliya-Olenyeva-Battlesuit-List{
+  text-align: center;
+}
+
+.Rozaliya-Olenyeva-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 500px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Liliya-Olenyeva-Battlesuit-List{
+  text-align: center;
+}
+
+.Liliya-Olenyeva-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Durandal-Battlesuit-List{
+  text-align: center;
+}
+
+.Durandal-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 1200px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Asuka-Battlesuit-List{
+text-align: center;
+}
+
+.Asuka-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Fischl-Battlesuit-List{
+  text-align: center;
+}
+
+.Fischl-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Elysia-Battlesuit-List{
+  text-align: center;
+}
+
+.Elysia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 500px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Raven-Battlesuit-List{
+  text-align: center;
+}
+
+.Raven-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Mobius-Battlesuit-List{
+  text-align: center;
+}
+
+.Mobius-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Carole-Pepper-Battlesuit-List{
+  text-align: center;
+}
+
+.Carole-Pepper-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Pardofelis-Battlesuit-List{
+  text-align: center;
+}
+
+.Pardofelis-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Aponia-Battlesuit-List{
+  text-align: center;
+}
+
+.Aponia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Eden-Battlesuit-List{
+  text-align: center;
+}
+
+.Eden-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Griseo-Battlesuit-List{
+  text-align: center;
+}
+
+.Griseo-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 500px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Vill-V-Battlesuit-List{
+  text-align: center;
+}
+
+.Vill-V-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Sushang-Battlesuit-List{
+  text-align: center;
+}
+
+.Sushang-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Ai-Hyperion-Battlesuit-List{
+  text-align: center;
+}
+
+.Ai-Hyperion-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Susannah-Manatt-Battlesuit-List{
+  text-align: center;
+}
+
+.Susannah-Manatt-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Prometheus-Battlesuit-List{
+  text-align: center;
+}
+
+.Prometheus-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Misteln-Schariac-Battlesuit-List{
+  text-align: center;
+}
+
+.Misteln-Schariac-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Shigure-Kira-Battlesuit-List{
+  text-align: center;
+}
+
+.Shigure-Kira-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Sirin-Battlesuit-List{
+  text-align: center;
+}
+
+.Sirin-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 250px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Senadina-Battlesuit-List{
+  text-align: center;
+}
+
+.Senadina-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Helia-Battlesuit-List{
+  text-align: center;
+}
+
+.Helia-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Coralie-Battlesuit-List{
+  text-align: center;
+}
+
+.Coralie-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Thelema-Battlesuit-List{
+  text-align: center;
+}
+
+.Thelema-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Lantern-Battlesuit-List{
+  text-align: center;
+}
+
+.Lantern-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Songque-Battlesuit-List{
+  text-align: center;
+}
+
+.Songque-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Vita-Battlesuit-List{
+  text-align: center;
+}
+
+.Vita-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Sparkle-Battlesuit-List{
+  text-align: center;
+}
+
+.Sparkle-Battlesuit-List-Image{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+  width: 300px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.container-3{
+  background-color: #686D76;
+  height: 150vh;
+  width: 100%;
+}
+
+}
 
