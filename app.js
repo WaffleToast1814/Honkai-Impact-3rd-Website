@@ -1,7 +1,8 @@
 let toggleBtn = document.getElementById('bar')
 let slides = document.getElementsByClassName("MySlides")
 let slideIndex = 0
-
+let PlayableCharacterButton = document.querySelector('.Playable-Character-Button')
+let UnplayableCharacterButton = document.querySelector('.Unplayable-Character-Button')
 
 function toggle(){
     let links = document.querySelector('.mobile-menu')
@@ -31,7 +32,20 @@ function showSlides(){
 
 showSlides()
 
+function CharacterSwitch(){
+    let buttonContainer = document.querySelector('.buttonContainer')
+    let PlayableCharacterImage = document.querySelector('.Character-List-Image')
+    if (PlayableCharacterImage.style.display === "none") {
+        PlayableCharacterImage.style.display === "block";
+      } else {
+        PlayableCharacterImage.style.display === "none";
+      }
+
+    let UnPlayableCharacterImagev = document.querySelector('.Unplayable-Character-List-Image')
+}
+
 
 
 toggleBtn.addEventListener('click', toggle)
-
+PlayableCharacterButton.addEventListener('click' , CharacterSwitch)
+UnplayableCharacterButton.addEventListener('click' , CharacterSwitch)
